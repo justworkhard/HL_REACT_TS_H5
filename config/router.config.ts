@@ -8,6 +8,7 @@ export default [
       { path: '/', component: './index', title: '首页' },
       { path: '/me', component: './me', title: '个人中心' },
       { path: '/404', component: '404' },
+      { path: '/login', component: './User/login', title: '首页' },
     ],
   },
 ];

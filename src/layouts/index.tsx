@@ -29,15 +29,18 @@ const BasicLayout: React.FC<IBasicLayout> = props => {
     }
   }
   return (
-    <TransitionGroup>
-      <CSSTransition key={pathname} classNames="fade" timeout={300}>
-        <div key={pathname} style={{ position: 'absolute', width: '100%', height: '100%' }}>
-          <div className={styles.normal}>
-            {children}
-          </div>
-        </div>
-      </CSSTransition>
-    </TransitionGroup>
+    // <TransitionGroup>
+    //   <CSSTransition key={pathname} classNames="fade" timeout={300}>
+    //     <div key={pathname} style={{ position: 'absolute', width: '100%', height: '100%' }}>
+    //       <div className={styles.normal}>
+    //         {children}
+    //       </div>
+    //     </div>
+    //   </CSSTransition>
+    // </TransitionGroup>
+      <div className={styles.normal}>
+        {children}
+      </div>
   );
 };
 
